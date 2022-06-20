@@ -8,5 +8,5 @@ function* heloSaga() {
 export default function* rootSaga() {
     console.log("Root Saga");
 
-  //  yield all([heloSaga(), counterSaga() ]);
+  // yield all([heloSaga(), counterSaga() ]);
 }
