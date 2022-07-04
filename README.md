@@ -49,4 +49,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 yarn create react-app ./ --template redux-typescript
 
 yarn add axios
-yarn add -D @types/redux-saga
+yarn add -D @types/redux-saga @types/axios
