@@ -1,19 +1,33 @@
+import { NotFound } from 'components/Common';
+import HomePage from 'features/counter/auth/pages/HomePage';
+import LoginPage from 'features/counter/auth/pages/LoginPage';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import './index.css';
+import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          {/* <PrivateRoute path="/admin">
+            <AdminLayout />
+          </PrivateRoute> */}
+
+          {/* No other routes match */}
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 

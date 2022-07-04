@@ -50,3 +50,4 @@ yarn create react-app ./ --template redux-typescript
 
 yarn add axios
 yarn add -D @types/redux-saga @types/axios
+yarn add react-router-dom
