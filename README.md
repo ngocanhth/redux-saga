@@ -51,3 +51,5 @@ yarn create react-app ./ --template redux-typescript
 yarn add axios
 yarn add -D @types/redux-saga @types/axios
 yarn add react-router-dom
+
+yarn add @mui/material @emotion/react @emotion/styled @mui/icons-material

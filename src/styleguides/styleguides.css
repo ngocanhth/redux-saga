@@ -1,0 +1,23 @@
+.container {
+    padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+p {
+    font-size: 14px;
+    line-height: 1;
+    color: #000;
+}
+
+h1 {
+    color: blue;
+}
+
+.link {
+    color: blue;
+}
