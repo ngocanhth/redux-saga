@@ -1,3 +1,4 @@
+import { store } from 'app/store';
 import { PrivateRoute } from 'components/Common';
 import Header from 'components/Common/Header';
 import AdminLayout from 'components/Layout/AdminLayout';
@@ -8,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <>
-     {/* <Provider store={store}> */}
+      <Provider store={store}> 
       <Header />
       <Routes>
         <Route
@@ -22,7 +23,7 @@ function App() {
           }
         />
       </Routes>
-      {/* </Provider> */}
+       </Provider> 
     </>
   );
 }
